@@ -9,3 +9,7 @@ def inicio():
 @app.route('/contato')
 def contato():
     return render_template("contato.html")
+
+@app.route('/msgenviar')
+def enviarmensagem():
+    return render_template("msg.html")
