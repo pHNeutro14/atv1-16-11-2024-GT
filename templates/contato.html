@@ -1,23 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link rel="stylesheet" href="../static/css/style.css">
-</head>
-<body>
-
-    <header>
-        <div class="nav-bar">
-            <nav>
-                <ul>
-                    <li><a href="/">Inicio</a></li>
-                    <li><a href="contato">Contate-me</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+{% extends "modelo.html" %}
+{% block conteudo %}
     <div class="div-forms">
         <form action="enviarmensagem" method="get">
             <label for ="nome_user">Nome:</label>
@@ -34,6 +16,4 @@
 
             <button type="submit">Enviar os gruli gruli?</button>
         </form>
-    </div>
-</body>
-</html>
+{% endblock %}
