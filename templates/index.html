@@ -1,31 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apresentação</title>
-    <link rel="stylesheet" href="../static/css/style.css">
-</head>
-<body>
-    <header>
-        <div class="nav-bar">
-            <nav>
-                <ul>
-                    <li><a href="/">Inicio</a></li>
-                    <li><a href="contato">Contate-me</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <h1>Sobre Me</h1>
-        <p>Sobre ieu: UwU jhonathan</p>
-        <img src="../static/img/killuasantos.jfif"><br>
-        <p>Idade: 19</p>
-        <p>Função: Front end developer</p>
-        <p>Localização: Xique - Xique BH</p>
-    </main>
-    
-</body>
-</html>
+{% extends "modelo.html" %}
+{% block conteudo %}
+<main>
+    <h1>Sobre Me</h1>
+    <p>Sobre ieu: UwU jhonathan</p>
+    <img src="../static/img/killuasantos.jfif"><br>
+    <p>Idade: 19</p>
+    <p>Função: Front end developer</p>
+    <p>Localização: Xique - Xique BH</p>
+</main>
+{% endblock %}

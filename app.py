@@ -10,6 +10,6 @@ def inicio():
 def contato():
     return render_template("contato.html")
 
-@app.route('/msgenviar')
+@app.route('/enviarmensagem')
 def enviarmensagem():
-    return render_template("msg.html")
+    return render_template("enviarmensagem.html")
